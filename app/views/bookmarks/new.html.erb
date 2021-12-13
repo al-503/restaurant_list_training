@@ -1,0 +1,5 @@
+<%= simple_form_for [ @restaurant_list, @bookmark ] do |n| %>
+  <%= n.input :comment %>
+  <%= n.association :restaurant %>
+  <%= n.submit "Submit comment", class: "btn btn-primary" %>
+<% end %>
