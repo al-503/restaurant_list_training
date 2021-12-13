@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :restaurant_lists, only: [ :index, :show, :new, :create ] do
     resources :bookmarks, only: [ :new, :create, :destroy ]
   end
+  resources :restaurants, only: [ :index, :show ]
 end

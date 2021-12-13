@@ -1,0 +1,17 @@
+<h1>Création de liste</h1>
+
+<div class="form">
+
+    <%= simple_form_for(@restaurant_list) do |r| %>
+      <div class="form-input">
+        <%= r.label :name, class:"label-naming"%>
+        <%= r.text_field :name, min:"2", maxlength:"20", class:"input-case" %>
+      </div>
+
+      <div class="form-input">
+        <%= r.button :submit, class:"submit-button" %>
+      </div>
+
+    <% end %>
+  
+</div>
