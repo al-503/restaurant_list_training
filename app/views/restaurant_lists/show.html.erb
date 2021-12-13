@@ -2,11 +2,11 @@
 
 <h2><%= @restaurant_list.name %></h2>
 <ul>
-<% @bookmark.each do |b| %>
+<% @bookmarks.each do |b| %>
 
   <li><h5><%= b.restaurant.name %> - <%= b.restaurant.speciality %></h5></li>
 
 <% end %>
 </ul>
 
-<%= link_to "créer un bookmark",  new_restaurant_list_bookmark_path(@restaurant_list), class:"btn btn-primary" %>
+<%= link_to "add restaurant",  new_restaurant_list_bookmark_path(@restaurant_list), class:"btn btn-primary" %>

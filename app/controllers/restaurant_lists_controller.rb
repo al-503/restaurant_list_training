@@ -17,8 +17,7 @@ class RestaurantListsController < ApplicationController
     @restaurant_list = RestaurantList.new(restaurant_list_params)
 
     if @restaurant_list.save
-    redirect_to restaurant_lists_path #redirige vers l index si ont veut rediriger vers le produit crée on lui passe la route associer
-
+      redirect_to restaurant_list_path(@restaurant_list)
     else
       render :new
     end
