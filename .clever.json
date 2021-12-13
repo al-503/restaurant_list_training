@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "app_id": "app_370f4dad-724f-4c57-87c1-1861c8237935",
+      "org_id": "user_88ca48d4-dc38-4b2a-b945-052f356775fd",
+      "deploy_url": "https://push-n2-par-clevercloud-customers.services.clever-cloud.com/app_370f4dad-724f-4c57-87c1-1861c8237935.git",
+      "name": "restaurant_list_training",
+      "alias": "restaurant_list_training"
+    }
+  ]
+}

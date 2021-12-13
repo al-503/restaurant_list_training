@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: restaurant_list_training_production
-  username: restaurant_list_training
-  password: <%= ENV['RESTAURANT_LIST_TRAINING_DATABASE_PASSWORD'] %>
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
