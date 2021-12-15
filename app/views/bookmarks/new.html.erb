@@ -1,10 +1,5 @@
 <%= simple_form_for [ @restaurant_list, @bookmark ] do |n| %>
 
-    <% @restaurants.each do |r| %>
-
-      <%= r.name %>/<%= r.speciality %>
-    <% end %>
-
   <%= n.association :restaurant %>
 
   <%= n.submit "valid your choice", class: "btn btn-primary" %>

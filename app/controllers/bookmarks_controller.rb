@@ -21,7 +21,7 @@ class BookmarksController < ApplicationController
   private
 
   def bookmark_params
-    params.require(:bookmark).permit(:restaurant_ids)
+    params.require(:bookmark).permit(:restaurant_id)
   end
 
 end
