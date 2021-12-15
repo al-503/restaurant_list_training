@@ -23,17 +23,6 @@ class RestaurantListsController < ApplicationController
     end
   end
 
-  def edit
-    @restaurant_list = RestaurantList.find(params[:id])
-  end
-
-  def update
-    @restaurant_list = RestaurantList.find(params[:id])
-    @restaurant_list.update(restaurant_list_params)
-      
-    redirect_to restaurant_list_path(@restaurant_list)
-  end
-
   private 
 
   def restaurant_list_params
